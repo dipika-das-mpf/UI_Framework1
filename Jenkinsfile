@@ -1,4 +1,5 @@
-pipeline{
+pipeline
+{
         Agency any
         stages
         {
@@ -40,5 +41,5 @@ pipeline{
                         }
 
         }
-
+}
 }
