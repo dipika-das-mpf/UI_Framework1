@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke test runs">
+
+    <listeners>
+        <listener class-name="pages.listeners">
+        </listener>
+        <listener class-name="base.ExtentReporterNG"></listener>
+    </listeners>
+    <test name="Demo Module">
+        <classes>
+            <class name="LoginPageController"></class>
+        </classes>
+    </test>
+    <test name="Test">
+        <classes>
+            <class name="LoginPageController1"></class>
+        </classes>
+    </test>
+    <parameter name="TriggerEmail" value="N"/>
+    <parameter name="EmailList" value="MySelf" />
+</suite>
