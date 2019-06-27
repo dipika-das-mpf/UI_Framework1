@@ -14,9 +14,6 @@ pipeline
              }
 
             }
-
-            stages
-            {
                         stage ('Testing Stage')
                         {
 
@@ -28,10 +25,7 @@ pipeline
                             }
                         }
                         }
-             }
 
-            stages
-            {
                         stage ('Development Stage')
                         {
                         steps
@@ -43,6 +37,6 @@ pipeline
                           }
                         }
 
-             }
+
         }
 }
