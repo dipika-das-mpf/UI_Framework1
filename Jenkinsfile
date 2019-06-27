@@ -11,7 +11,7 @@ pipeline
                 {
                     sh 'mvn clean compile'
                 }
-                    }
+             }
 
             }
 
@@ -20,13 +20,15 @@ pipeline
                         stage ('Testing Stage')
                         {
 
-                        steps {
+                        steps
+                        {
                             withMaven (maven: 'maven_3_6_1')
                             {
                                 sh 'mvn clean compile'
                             }
                         }
                         }
+             }
 
             stages
             {
@@ -34,12 +36,13 @@ pipeline
                         {
                         steps
                          {
-                            withMaven (maven: 'maven_3_6_1'){
+                            withMaven (maven: 'maven_3_6_1')
+                            {
                                 sh 'mvn clean compile'
                             }
-                        }
+                          }
                         }
 
+             }
         }
-}
 }
